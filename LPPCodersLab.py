@@ -10,7 +10,7 @@ mp = pickle.load(open('model.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
 label_encoder = pickle.load(open('label_encoder.pkl','rb'))
 
-st.title("Laptop Predictor")
+st.title("Laptop Price Predictor")
 
 # brand
 company = st.selectbox('Brand',df['Company'].unique())
