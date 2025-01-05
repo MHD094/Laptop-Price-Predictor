@@ -2,6 +2,8 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
+from xgboost import XGBRegressor
+from sklearn.preprocessing import LabelEncoder
 
 # import the model
 mp = pickle.load(open('model.pkl','rb'))
